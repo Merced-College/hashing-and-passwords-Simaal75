@@ -1,3 +1,6 @@
+//Simaal Belgaumi
+//CPSC 25
+
 #include <iostream>
 #include <fstream>
 #include <unordered_map>
@@ -6,10 +9,10 @@
 
 using namespace std;
 
-// Improved hash function to reduce collisions (using base = 3)
+// Improved hash function to reduce collisions
 int HashString(const string& value) {
     int hashCode = 0;
-    int base = 3; // Changed base from 31 to 3 for the hash calculation
+    int base = 3;
     for (char c : value) {
         hashCode = hashCode * base + c; // Multiply current total by base and add character
     }
